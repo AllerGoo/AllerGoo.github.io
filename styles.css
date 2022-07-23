@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*---- Header Section ----*/
 .header{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     background-color: #ffff;
     background-position: center;
@@ -67,10 +69,11 @@ nav img{
 }
 
 .text-box{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 60%;
     color: #333;
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -80,6 +83,14 @@ nav img{
 .text-box h1{
     font-size: 72px;
     letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.text-box h1:hover{
+    color: #EDAE0E;
+    transition-delay: 0.5s;
+    transition: 0.5s;
 }
 
 .text-box p{
@@ -87,17 +98,85 @@ nav img{
     font-size: 18px;
 }
 
+.lm-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px 50px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+.lm-btn:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
 
 
 
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+    }
+}
 
 
+/*---- Product Navigation Section----*/
+.prod-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    padding-top: 100px;
 
+}
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+}
 
+p{
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
 
+.phone-prototype img{
+    display: block;
+    scale: fill;
+    padding-left: 17%;
+    align-self: center;
+}
 
-
-
+.phone-prototype h1{
+    transform-origin: left;
+}
 
 
 
