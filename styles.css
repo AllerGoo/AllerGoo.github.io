@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*---- Header Section ----*/
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #ffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    left: 95px;
+}
+
+/*The logo's css*/
+nav img{
+    position: absolute;
+    width: 132px;
+    height: 134px;
+    left: 95px;
+    top: 27px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    top: 55px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    top: 55px;
+}
+
+.nav-links ul li a{
+    color: #333;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 55px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #EDAE0E;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60%;
+    color: #333;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 72px;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.text-box h1:hover{
+    color: #EDAE0E;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+}
+
+.text-box p{
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+/*---- Learn More Button(Large size) ----*/
+.lm-btn-L {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+/*---- Learn More Button(medium size) ----*/
+.lm-btn-m {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+/*---- Learn More Button(Large size) hover ----*/
+.lm-btn-L:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+/*---- Learn More Button(medium size) hover ----*/
+.lm-btn-m:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+/*---- Adjusts the size of other devices ----*/
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+
+/*---- Product Navigation Section----*/
+.prod-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+}
+
+p{
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.img-box{
+    display: block;
+    scale: fill;
+    padding-left: 7%;
+    align-self: center;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text-box-2{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .text-box-2 h1{
+    color: #333;
+    font-size: 36px;
+    line-height: 1.4em;
+    text-align: left;
+
+}
+
+.content .text-box-2 p{
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.content .img-box{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .img-box a img{
+    align-self: center;
+}
+
+
+/*---- Design Process Section ----*/
+.img-bg{
+    padding: 30px;
+    margin: 50px;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url("Images/design\ process.png");
+    filter: blur(3px);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-bg-text{
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-bg-text a{
+    margin-top:  30px;
+}
+
+.img-bg-text span:hover{
+    color: #EDAE0E;
+    transition: ease-in-out;
+}
+
+
+/*---- Upload Navigation Section ----*/
+.upload-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    min-height: 50vh;
+    display: block;
+    align-items: center;
+}
+
+.upload-nav a{
+    max-width: 300px;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinning-text {
+    width: var(--s-loader-width);
+    height: var(--s-loader-height);
+    background: transparent;
+    /* The svg image that rotates with the container */
+    /* No background for the circle */
+    /* Text that is aligned around the circle*/
+}
+.spinning-text.animate{
+    animation-name: rotate-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    position: relative;
+    justify-content: space-between;
+}
+
+.spinning-text svg{
+    background-color: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5px;
+    justify-content: space-between;
+}
+
+.spinning-text circle{
+    fill: transparent;
+}
+
+.spinning-text text{
+    fill: #EDAE0E;
+}
+  
+@keyframes rotate-animation{
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
