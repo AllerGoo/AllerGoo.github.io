@@ -98,20 +98,47 @@ nav img{
     font-size: 18px;
 }
 
-.lm-btn {
+/*---- Learn More Button(Large size) ----*/
+.lm-btn-L {
     display: inline-block;
     text-decoration: none;
     color: #333;
     border: 2px solid #333;
     padding: 15px 50px;
     font-size: 20px;
+    margin-top: 10px;
     background: transparent;
     position: relative;
     cursor: pointer;
     border-radius:  0em;
 }
 
-.lm-btn:hover {
+/*---- Learn More Button(medium size) ----*/
+.lm-btn-m {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+/*---- Learn More Button(Large size) hover ----*/
+.lm-btn-L:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+/*---- Learn More Button(medium size) hover ----*/
+.lm-btn-m:hover {
     background: #333;
     border: 2px solid #333;
     color: #fff;
@@ -121,6 +148,8 @@ nav img{
 
 
 
+
+/*---- Adjusts the size of other devices ----*/
 @media(max-width:700px){
     .text-box h1{
         font-size: 30px;
@@ -151,8 +180,8 @@ nav img{
     margin: auto;
     text-align: Left;
     padding-top: 100px;
-
 }
+
 h1{
     font-size: 48px;
     font-weight: 600;
@@ -163,20 +192,125 @@ p{
     color: #333;
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+    line-height: 30px;
 }
 
-.phone-prototype img{
+.img-box{
     display: block;
     scale: fill;
-    padding-left: 17%;
+    padding-left: 7%;
     align-self: center;
 }
 
-.phone-prototype h1{
-    transform-origin: left;
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.content .text-box-2{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .text-box-2 h1{
+    color: #333;
+    font-size: 36px;
+    line-height: 1.4em;
+    text-align: left;
+
+}
+
+.content .text-box-2 p{
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.content .img-box{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .img-box a img{
+    align-self: center;
+}
+
+.content .img-box a img:hover{
+    transform: rotate(30);
+}
+
+
+/*---- Design Process Section ----*/
+.img-bg{
+    padding: 30px;
+    margin: 50px;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url("Images/design\ process.png");
+    filter: blur(3px);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-bg-text{
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.img-bg-text a{
+    margin-top:  30px;
+}
+
+.img-bg-text span:hover{
+    color: #EDAE0E;
+    transition: ease-in-out;
+}
+
+
+/*---- Upload Navigation Section ----*/
+.upload-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    padding-top: 100px;
+    min-height: 60vh;
+}
+
+
+
+
+
+
+
+
 
 
 
