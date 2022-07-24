@@ -88,9 +88,29 @@ ScrollTrigger.refresh();
 
 
 
+//Project/product Page code starts here
 
+const colourCards = document.querySelectorAll(".card")
 
+function green2(){
+    document.body.classList.remove('cream', 'green1', 'yellow');
+    document.body.classList.toggle('green2');
+}
 
+function green1(){
+    document.body.classList.remove('green2', 'cream', 'yellow');
+    document.body.classList.toggle('green1');
+}
+
+function cream(){
+    document.body.classList.remove('green2', 'green1', 'yellow');
+    document.body.classList.toggle('cream');
+}
+
+function yellow(){
+    document.body.classList.remove('green2', 'green1', 'cream');
+    document.body.classList.toggle('yellow');
+}
 
 
 
