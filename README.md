@@ -1,2 +1,2 @@
 # AllerGoo.github.io
-Allergy's Official Website
+AllerGo's Official Website
