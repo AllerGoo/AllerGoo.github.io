@@ -1,0 +1,1139 @@
+/*---- The general settings ----*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-L{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10vh;
+    min-height: 80vh;
+}
+
+.container-M{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 50vh;
+}
+
+.container-S{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 20vh;
+}
+/*--------*/
+
+/*---- Fooder Section Start ----*/
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer a
+{
+  color:#737373;
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li
+{
+  display:block
+}
+
+.footer-links a
+{
+  color:#737373
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+/*---- Fooder Section End ----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Home Page Start ----*/
+/*---- Header Section ----*/
+.header{
+    min-height: 80vh;
+    width: 100%;
+    background-color: #ffff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    left: 95px;
+}
+
+/*The logo's css*/
+nav img{
+    position: absolute;
+    width: 132px;
+    height: 134px;
+    left: 95px;
+    top: 27px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    top: 55px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    top: 55px;
+}
+
+.nav-links ul li a{
+    color: #333;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    top: 55px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #EDAE0E;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60%;
+    color: #333;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 72px;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.text-box h1:hover{
+    color: #EDAE0E;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+}
+
+.text-box p{
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+/*---- Learn More Button(Large size) ----*/
+.lm-btn-L {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+/*---- Learn More Button(medium size) ----*/
+.lm-btn-m {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 40px;
+    font-size: 15px;
+    margin-top: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius:  0em;
+}
+
+/*---- Learn More Button(Large size) hover ----*/
+.lm-btn-L:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+/*---- Learn More Button(medium size) hover ----*/
+.lm-btn-m:hover {
+    background: #333;
+    border: 2px solid #333;
+    color: #fff;
+    transition: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+/*---- Adjusts the size of other devices ----*/
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+
+/*---- Product Navigation Section----*/
+.prod-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+}
+
+p{
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.img-box{
+    display: block;
+    scale: fill;
+    padding-left: 7%;
+    align-self: center;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .text-box-2{
+    position: relative;
+    max-width: 900px;
+}
+
+.content .text-box-2 h1{
+    color: #333;
+    font-size: 36px;
+    line-height: 1.4em;
+    text-align: left;
+
+}
+
+.content .text-box-2 p{
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content .img-box{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .img-box a img{
+    align-self: center;
+}
+
+
+/*---- Design Process Section ----*/
+.img-bg{
+    padding: 30px;
+    margin: 50px;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url("Images/design\ process.png");
+    filter: blur(3px);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-bg-text{
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-bg-text a{
+    margin-top:  30px;
+}
+
+.img-bg-text span:hover{
+    color: #EDAE0E;
+    transition: ease-in-out;
+}
+
+
+/*---- Upload Navigation Section ----*/
+.upload-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    min-height: 50vh;
+    display: block;
+    align-items: center;
+}
+
+.upload-nav a{
+    max-width: 300px;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinning-text {
+    width: var(--s-loader-width);
+    height: var(--s-loader-height);
+    background: transparent;
+    /* The svg image that rotates with the container */
+    /* No background for the circle */
+    /* Text that is aligned around the circle*/
+}
+.spinning-text.animate{
+    animation-name: rotate-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    position: relative;
+    justify-content: space-between;
+}
+
+.spinning-text svg{
+    background-color: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5px;
+    justify-content: space-between;
+}
+
+.spinning-text circle{
+    fill: transparent;
+}
+
+.spinning-text text{
+    fill: #EDAE0E;
+}
+  
+@keyframes rotate-animation{
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/*---- Home Page End ----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Project/Product Page start----*/
+.container-L .text-box{
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-height: 10vh;
+}
+
+.row-btn{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    min-height: 8vh;
+
+}
+
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    min-height: 50vh;
+}
+
+
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    min-height: 60vh;
+}
+
+/*---- Background color card----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    transition: background-color ease 1s;
+}
+
+h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.card-container {
+    max-height: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:100px;
+    justify-content: center;
+    padding:10px;
+}
+
+.card {
+    width:100%;
+    height:200px;
+    box-shadow: 12px 5px 5px rgba(0, 0, 0, 0.2), 
+                -1px -1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+.swatch {
+    width:100%;
+    height: 80%;
+    border-radius: 2px;
+    cursor: cell;
+}
+
+.green1 {
+    background-color: #699f4e;
+}
+
+.green2{
+    background-color: #B1d182;
+}
+
+.cream {
+    background-color: #f4f1e9;
+}
+
+.yellow {
+    background-color: #EDAE0E;
+}
+
+
+.name {
+    padding: 5px 10px 25px 16px;
+    box-shadow: inset 2px 2px 10px white;
+   
+}
+
+.card:active {
+    box-shadow: 2px 2px 5px rgb(192,190,193);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        padding:20px 0 20px 0;
+        width:50vw;
+        height:auto;
+        grid-template-columns: repeat(2, minmax(150px, 150px));
+        
+    }
+}
+
+
+
+
+/*---- Project/Product Page end----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Contact Page Start----*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fff;
+  color: #b3aca7;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+/*---- Contact Page End----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Upload Page Start----*/
+.dnd-upload h1{
+    font-size: 64px;
+}
+
+
+
+:root {
+    --c-action-primary: #EDAE0E;
+    --c-action-primary-accent: #f4f1e9;
+    --c-action-secondary: #e5e5e5;
+    --c-text-primary: #333;
+    --c-text-secondary: #6a6b76;
+    --c-background-primary: #d0d1de;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.modal {
+  width: 90%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.logo-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--c-action-primary-accent);
+}
+.logo-circle svg {
+  max-width: 1.5rem;
+}
+
+.modal-body {
+  padding: 1rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: #333;
+}
+
+.modal-description {
+  color: var(--c-text-secondary);
+}
+
+.dropzone {
+  margin-top: 1.25rem;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23ccc' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-color: transparent;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropzone:hover, .upload-area:focus {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%232e44ff' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.dropzone-icon {
+  display: block;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.dropzone-icon svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.dropzone-title {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 700;
+  color: var(--c-text-primary);
+}
+
+.dropzone-description {
+  display: block;
+  color: var(--c-text-secondary);
+}
+
+.dropzone-description strong {
+  color: var(--c-action-primary);
+  font-weight: 700;
+}
+
+.modal-footer {
+  padding: 0.75rem 0.85rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer [class*=btn-] {
+  margin-left: 0.75rem;
+}
+
+.btn-secondary, .btn-primary {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border: 2px solid var(--c-action-secondary);
+  border-radius: 0.25rem;
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--c-action-primary);
+  border-color: var(--c-action-primary);
+  margin-bottom: 10px;
+}
+
+
+/*---- Upload Page End----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
